@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 //Componentes
 import Nav from '../components/Nav.jsx';  //Tiene a SearchBar
-import Cards from '../components/Cards.jsx'; //Tiene a Card
-import AboutUs from '../components/AboutUs.jsx';
+import HorizontalBar from '../components/HorizontalBar.jsx'; //Tiene a Card
+import Descripcion from '../components/Descripcion.jsx';
 import Country from '../components/Country.jsx';
 import Landing from '../components/Landing.jsx';
 //imports de componentes que luego se borran
@@ -36,7 +36,7 @@ export default function App(){
         <Card/>
       </div>
       <div>
-        <Cards/>
+        <HorizontalBar/>
       </div>
       <div>
         <Country/>
@@ -45,7 +45,7 @@ export default function App(){
         <Landing/>
       </div>
       <div>
-        <AboutUs/>
+        <Descripcion/>
       </div>
     </div>
   );
