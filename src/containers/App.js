@@ -16,6 +16,7 @@ import { Route } from 'react-router-dom';
 import './App.css'
 
 
+
 // Primer funcion solo para testear los componentes, sabemos que aparece en el div root
 export default function App(){
   //aca iria la constante de estado

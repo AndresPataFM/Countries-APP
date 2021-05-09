@@ -1,0 +1,41 @@
+#container img{
+    width: 180px;
+}
+
+#cont img{
+    width: 85px;
+}
+
+#info{
+    margin: 50px;
+}
+
+#cont{
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+}
+#container{
+    align-items: center;
+    display: flex;
+   align-content: center;
+}
+
+#datos{
+    width: 150%;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+#poblacion, #everest, #ciudad{
+    margin: 110px;
+}
+
+
+button{
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(40, 136, 245);
+    padding: 7px;
+}
