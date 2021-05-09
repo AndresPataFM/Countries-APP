@@ -37,6 +37,10 @@ export default function App(){
       setCountriesData(data)
       setMainCountry(data[2])}) 
   }, []) 
+  function changeCountry(country){
+    setMainCountry(country)
+  }
+  
   // con el [] solo hace el llamado una vez, si esta afuera llama siempre
  
   //fetch asincrónico
@@ -56,16 +60,24 @@ export default function App(){
   //solo puede retornar 1 componente pero este puede tener muchos hijos
   return (
     <div className="App">
-        <Nav/>
-        <SearchBar/>
-        <Country
+        <Route
+          exact path= '/'
+          component={Landing}
+        />
+        <Route
+          path= '/home'
+          render={()=><Country
             country={mainCountry}
+            />}
         />
-        <HorizontalBar
-          countries={countriesData}
+        <Route
+          path= '/home'
+          render={()=><HorizontalBar
+            countries={countriesData}
+            changeCountry={changeCountry}
+          />}
         />
-        <Landing/>
-        <Descripcion/>
+        
     </div>
   );
 };
@@ -106,3 +118,18 @@ export default function App(){
 // }
 
 // export default App;
+
+// return (
+//   <div className="App">
+//       <Nav/>
+//       <SearchBar/>
+//       <Country
+//           country={mainCountry}
+//       />
+      // <HorizontalBar
+      //   countries={countriesData}
+      // />
+//       <Landing/>
+//       <Descripcion/>
+//   </div>
+// );

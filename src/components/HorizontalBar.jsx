@@ -15,13 +15,16 @@ export default function Cards({countries}){
                     scrollBy={1}
                     arrowLeft={<div className={styles.arrow}>{" < "}</div>}
                     arrowRight={<div className={styles.arrow}>{" > "}</div>}
-                    data={countries.map((countries, index) => (
+                    data={countries.map((changeCountry, countries, index) => (
+                            <div>
                             <Card
                                 name={countries.name}
                                 flag={countries.flag}
                                 subregion={countries.subregion}
                                 key={index}
                             />
+                            <button onClick={changeCountry(countries)}>Description</button>
+                            </div>
                     ))}
                 />
             </div>
