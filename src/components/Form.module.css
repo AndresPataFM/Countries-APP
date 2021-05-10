@@ -1,0 +1,45 @@
+.force{
+    
+    border-style:solid;
+    border-color: rgba(62, 62, 71, 0.164);
+    border-width: 3px;
+  
+    background-color: rgba(62, 62, 71, 0.164);
+    border-radius: 20px;
+
+}
+
+.buton{
+    border: none;
+    color: rgb(77, 77, 77);
+    border-radius: 3px;
+    background-color: rgb(71, 71, 71);
+    padding: 7px;
+    margin:5px
+}
+.buton:hover{
+    background-color:rgb(69, 155, 212);
+    color: white;
+}
+.force:hover{
+    border-color:rgb(184, 186, 187) ;
+    background-color: rgb(212, 236, 247);
+}
+.force input{
+    background-color: rgba(255, 255, 255, 0.26);
+    border-color: rgb(167, 167, 167);
+    border-radius: 5px;
+    margin: 5px;
+    border-style: solid;
+    text-align: center;
+}
+.row{
+    
+    background-color: rgba(255, 255, 255, 0.26);
+    border-color: rgb(167, 167, 167);
+    border-radius: 5px;
+    margin: 5px;
+    border-style: solid;
+    text-align: center;
+    color: rgb(77, 77, 77);
+}
