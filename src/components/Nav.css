@@ -1,0 +1,20 @@
+nav {
+    display: flex;
+    margin: 10px;
+}
+#asia{
+    color: rgb(45, 189, 255);
+    font-size: xx-large;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+#conociendo{
+    font-size: x-large;
+    margin-top: 10px;
+}
+
+#cnt{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,16 @@
+.searchBar{
+    display:flex;
+    width: 500px;
+}
+.searchInput{
+    width: 500px;
+    background-color: rgb(192, 186, 186);
+    color:black;
+}
+.searchBtn{
+    background-color: #1c1b1a;
+    border: solid;
+    color: #d16517;
+    border-color: chocolate;
+    border-width: 2px;
+}

@@ -2,13 +2,14 @@
     display: flex;
     align-content: center;
     flex-direction: column;
-    width: 215px;
+    margin: 0 20px
 }
 
 .flag{
     max-width: 200px;
     max-height: 200px;
-    
+    display: flex;
+    align-self: center;
 }
 
 .cardText{

@@ -13,8 +13,9 @@ import TestCountry, { Afghanistan } from '../components/TestCountry'; //Data sac
 import SearchBar from '../components/SearchBar.jsx';
 //Ruta
 import { Route } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 //Estilo
-import './App.css'
+import './App.css';
 
 
 // Primer funcion solo para testear los componentes, sabemos que aparece en el div root
@@ -37,10 +38,21 @@ export default function App(){
       setCountriesData(data)
       setMainCountry(data[2])}) 
   }, []) 
-  function changeCountry(country){
-    setMainCountry(country)
+
+  function onSearch(country) {
+    //Llamado a la API del clima
+    fetch(`https://restcountries.eu/rest/v2/name/${country}`)
+      .then(r => r.json())
+      .then((recurso) => {
+        if(recurso[0] !== undefined){
+          setMainCountry(recurso[0])
+        } else {
+          alert("Country not found");
+        }
+      });
   }
-  
+
+  const { id } = useParams()
   // con el [] solo hace el llamado una vez, si esta afuera llama siempre
  
   //fetch asincrónico
@@ -65,18 +77,29 @@ export default function App(){
           component={Landing}
         />
         <Route
+          path = '/home'
+          render={()=><Nav onSearch={onSearch}/>}
+        
+        />
+        <Route
           path= '/home'
           render={()=><Country
             country={mainCountry}
             />}
         />
         <Route
+          path= '/home/:id'
+          render={()=>{<Country
+            country={onSearch(id)}
+            />}}
+        />
+        <Route
           path= '/home'
           render={()=><HorizontalBar
             countries={countriesData}
-            changeCountry={changeCountry}
           />}
         />
+
         
     </div>
   );
