@@ -1,0 +1,23 @@
+.searchBar{
+    display:flex;
+    align-self: center;
+    width: 500px;
+}
+.searchInput{
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+}
+.searchBtn:hover{
+    background-color: rgb(81, 191, 235);
+}
+.searchBtn{
+
+    border-width: 2px;
+        border: none;
+        color: white;
+        background-color: slategray;
+       height: auto;
+       padding: 3px;
+    
+}
