@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+
+    flex-direction: column;
+    justify-self: center;
+}
+
+.bar{
+   
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-self: center;
+    width: 70%;
+    border-radius: 5px;
+    background-color: rgb(202, 202, 202);
+}
+.arrow{
+    height: 55px;
+    background-color: #ffffffc7;
+    width: 35px;
+    border-radius: 50px;
+    display:flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 135px;
+    margin-bottom: 135px;
+}
+
+.bar img{
+    height: 100px;
+    border-radius: 5px;
+}
+.arrow:hover{
+    
+    color: white;
+    background-color: rgb(72, 163, 216);
+    
+}
+.clase2:visited{
+    color: black;
+    text-decoration: none;
+    text-decoration: wavy;
+    
+}
+.clase2{
+    color: black;
+    text-decoration: wavy;
+}
+.bar:hover{
+    background-color: rgba(142, 212, 240, 0.651);
+}
