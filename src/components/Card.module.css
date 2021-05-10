@@ -1,0 +1,32 @@
+.card{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin: 0 20px
+}
+
+.flag{
+    max-width: 200px;
+    max-height: 200px;
+    display: flex;
+    align-self: center;
+}
+
+.cardText{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+
+.cardName{
+    /* font-family: */
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: auto;
+    font-weight: 500;
+}
+
+.cardSubregion{
+    font-size: 16px;
+    text-align: center;
+}
