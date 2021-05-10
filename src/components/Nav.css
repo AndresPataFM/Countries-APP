@@ -1,16 +1,23 @@
 nav {
     display: flex;
-    margin: 10px;
+    margin: 15px;
 }
 #asia{
     color: rgb(45, 189, 255);
     font-size: xx-large;
     font-weight: bold;
+    padding-left: 10px;
 }
 
 #conociendo{
     font-size: x-large;
     margin-top: 10px;
+}
+
+#cnt{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 
 
