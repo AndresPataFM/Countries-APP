@@ -1,11 +1,13 @@
 import React from 'react';
-import SearchBar from './SearchBar.jsx';
-import styles from './Card.module.css';
+import './Nav.css';
+import image from '../panda.png'
 
 export default function Nav(){
     return(
-        <div>
-            codigo
-        </div>
+       <nav><span id="conociendo">conociendo</span> <span id="asia">Asia</span>
+        <img src={image} width="95" />
+        
+       </nav>
     );
+   
 };
