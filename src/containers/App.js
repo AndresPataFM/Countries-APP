@@ -52,7 +52,7 @@ export default function App(){
       });
   }
 
-  const { id } = useParams()
+  const { ctryName } = useParams()
   // con el [] solo hace el llamado una vez, si esta afuera llama siempre
  
   //fetch asincrónico
@@ -86,12 +86,6 @@ export default function App(){
           render={()=><Country
             country={mainCountry}
             />}
-        />
-        <Route
-          path= '/home/:id'
-          render={()=>{<Country
-            country={onSearch(id)}
-            />}}
         />
         <Route
           path= '/home'
@@ -156,3 +150,9 @@ export default function App(){
 //       <Descripcion/>
 //   </div>
 // );
+//<Route
+//path= '/home/:ctryName'
+//render={()=>{<Country
+//  country={onSearch(ctryName)}
+//  />}}
+///>

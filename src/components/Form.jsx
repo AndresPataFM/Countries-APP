@@ -2,6 +2,7 @@ import React from 'react';
 import al from "sweetalert";
 import validate from './Validate.jsx'
 // necesita 'npm install sweetalert-react'
+import styles from "./Form.module.css"
 
 
 
@@ -78,7 +79,7 @@ export default function  Form() {
   }
   
   return (
-  <div >
+  <div className={styles.force}>
 <h4><em>If you want to collaborate with this project, please leave us your information</em></h4>
     <form onSubmit={handleSubmit}>
 <div>

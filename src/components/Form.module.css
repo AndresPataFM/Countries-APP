@@ -1,0 +1,10 @@
+.force{
+    
+    border-style:ridge;
+    border-color: rgba(62, 62, 71, 0.164);
+    border-width: 8px;
+  
+    background-color: rgba(62, 62, 71, 0.164);
+    border-radius: 20px;
+
+}
