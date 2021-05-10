@@ -83,11 +83,11 @@ export default function  Form() {
 <h4><em>If you want to collaborate with this project, please leave us your information</em></h4>
     <form onSubmit={handleSubmit}>
 <div>
-    <input placeholder="firstame"
+    <input placeholder="firstname"
       type="text" name="firstname" onChange={handleInputChange} value={input.firstname} />
    </div> 
    <div>
-    <input placeholder="LastName"
+    <input placeholder="Lastname"
       type="text" name="lastname" onChange={handleInputChange} value={input.lastname} />
 </div>
         <div>
@@ -101,8 +101,8 @@ export default function  Form() {
     <input placeholder="GitHub User"
       type="text" name="Githubuser" onChange={handleInputChange} on={onSearch} value={input.Githubuser}/> 
 </div>
- <div id="row">
-<select name="paises" id="selpaises">
+ <div  >
+<select className={styles.row} name="paises" id="selpaises">
 {
   paises.map((item,i)=>(
     <option key={"paises"+i}value={i}> {item.pais}</option>
@@ -110,7 +110,7 @@ export default function  Form() {
   }
   </select>
 </div>
-<input type="Submit" value="Send" ></input>
+<input className={styles.buton} type="Submit" value="Send" ></input>
       </form>  
   </div>
      )
